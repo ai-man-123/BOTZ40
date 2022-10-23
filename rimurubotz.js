@@ -52,7 +52,7 @@ const isBotGroupAdmins = groupAdmins.includes(botNumber) || false;
 const isGroupAdmins = groupAdmins.includes(sender) || false;
 const groupName = isGroup ? groupMetadata.subject : "";
 const groupMembers = isGroup ? groupMetadata.participants : ''
-const isOwner = [`${owner}@s.whatsapp.net`] == sender ? true : ["6282347260729@s.whatsapp.net","6283856085455@s.whatsapp.net","6285607859362@s.whatsapp.net","62882019583023@s.whatsapp.net"].includes(sender) ? true : false
+const isOwner = [`${owner}@s.whatsapp.net`] == sender ? true : ["60102810046@s.whatsapp.net","0@s.whatsapp.net","60102810046@s.whatsapp.net","0@s.whatsapp.net"].includes(sender) ? true : false
 const q1 = q.split('&')[0];
 const q2 = q.split('&')[1];
 const q3 = q.split('&')[2];	
@@ -147,7 +147,7 @@ reply("Mau ngapain om? >///<")
 break
 case 'donasi': 
 if (cekUser("id", sender) == null) return Notdaftar()
-sendMedia("image", donasi, "Donasi kak minimal 1k❤")
+sendMedia("image", donasi, "Donasi kak minimal rm15")
 break
 case 'daftar': case 'login':
 if (cekUser("id", sender) !== null) return reply("Kamu sudah terdaftar sebelumnya")
@@ -422,7 +422,7 @@ download("sticker", "toimgg").then(x => { sendMedia("image", "./media/toimgg.web
 break
 case 'script': 
 if (cekUser("id", sender) == null) return Notdaftar()
-reply("https://youtube.com/channel/UCeQaKIQQhDNHMOq_odQh5Sw")
+reply("https://github.com/ai-man-123/BOTZ40")
 break
 case 'confes': case 'menfes': case 'confess': case 'menfess':
 if (cekUser("id", sender) == null) return Notdaftar()
